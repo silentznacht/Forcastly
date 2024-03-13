@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Forecastly</title>
+    <link rel="icon" type="image/x-icon" href="images/forecastly.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top-panel">     
+        <h2 id="title">FORECASTLY</h2>   
+    </div>
+    <div id="holder-panel">
+        <h2 id="open-nav">&#x2630;</h2>
+        <div id="navigation-panel">
+            <h2 id="close-nav">&#x2715;</h2>
+            <img id="forecastlyIcon" src="images/forecastly.png">
+            <div class="nav-divs" id="home-btn">
+                <a class="nav-btns"><img id="home-image" src="images/home.png"><h3 class="nav-titles">Home</h3></a>
+            </div>
+            <div class="nav-divs" id="weather-btn">
+                <a class="nav-btns"><img id="weather-image" src="images/weather.png"><h3 class="nav-titles">Weather</h3></a>
+            </div>
+            <div class="nav-divs" id="airpollution-btn">
+                <a class="nav-btns"><img id="airpollution-image" src="images/airpollution.png"><h3 class="nav-titles">Air Quality</h3></a>
+            </div>
+            <div id="zip-code-indicator">
+                <h2>Zip Code</h2>
+            </div>
+            <form autocomplete="off">
+                <input id="zip-code-input" placeholder="zip code" type="text" value="">
+                <img id="search-btn" src="images/search.png">
+            </form>
+        </div>
+        <div class="content-panels" id="home-panel">
+            <h2>Why Us?</h2>
+            <p>When it comes to staying informed and prepared for the ever-changing weather conditions, our weather app stands out as the ultimate choice. With a seamless blend of advanced technology, user-friendly design, and a commitment to delivering accurate and timely weather information, we provide precise and accurate weather analytics for zip codes around the world. Choose our weather app as your ultimate weather partner and embark on a journey of accurate forecasts, personalized insights, and a beautifully designed interface that empowers you to make informed decisions every day.  </p>
+            <h2>Why Is It Essential to Check the Weather?</h2>
+            <p>Checking the weather is essential for planning out the remainder of your day. Waking up and viewing the forecast enables individuals to properly establish plans and events without concerns about potential inconveniences. Faulty weather apps, in the past, have incorrectly predicted forecasts , resulting in countless disrupted plans worldwide. Our weather app exclusively offers the most precise data, empowering users to effectively plan and schedule their day with confidence.</p>
+            <h2>What is Air Quality?</h2>
+            <p>Air quality refers to the extent to which the air is suitable or clean enough for both humans and the environment. It is typically assessed using the Air Quality Index (AQI), where a higher number indicates poorer air quality, while a lower number indicates better and cleaner air quality. Understanding the air quality in your vicinity is crucial for your well-being. Exposure to inadequate air quality can result in significant health concerns, including lung cancer and other diseases.</p>
+        </div>
+        <div class="content-panels" id="weather-panel">
+            <div id="weather-container">
+                <div id="weather-container-1">
+                    <h2 id="weather-zip-code"></h2>
+                    <h1 id="weather-description"></h1>
+                    <img id="weather-condition-icon">
+                </div>
+                <div id="weather-container-2">
+                    <div>
+                        <h2>Temperature</h2>
+                        <h3 id="temperature"></h3>
+                    </div>
+                    <div>
+                        <h2>Low</h2>
+                        <h3 id="low"></h3>
+                    </div>
+                    <div>
+                        <h2>High</h2>
+                        <h3 id="high"></h3>
+                    </div>
+                    <div>
+                        <h2>Feels Like</h2>
+                        <h3 id="feels-like"></h3>
+                    </div>
+                </div>
+                <div id="weather-container-3">
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <h3 id="wind-speed"></h3>
+                    </div>
+                    <div>
+                        <h2>Pressure</h2>
+                        <h3 id="pressure"></h3>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <h3 id="humidity"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-panels" id="airpollution-panel">
+            <div id="scale-container">
+                <h2 id="airpollution-zip-code"></h2>
+                <h1 id="air-quality-index"></h1>
+                <h2 id="air-quality-status"></h2>
+                <h3 id="air-quality-description"></h3>
+            </div>
+            <div id="spectrum">
+                <h2 id="pointer">&#x2304;</h2>
+                <div id="line-container">
+                    <h2>Good</h2>
+                    <div id="line"></div>
+                    <h2>Hazardous</h2>
+                </div>
+                <div id="quality-label-container">
+                    <h2>Fair</h2>
+                    <h2>Moderate</h2>
+                    <h2>Unhealthy</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

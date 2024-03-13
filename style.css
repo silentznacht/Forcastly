@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+#top-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28242c;
+    height: 5%;
+}
+
+#title {
+    margin: 0;
+    margin-left: 320px;
+    transition: 0.5s;
+}
+
+#forecastlyIcon {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#holder-panel {
+    display: flex;
+    height: 95%;
+}
+
+#navigation-panel {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #28242c;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 16%;
+    height: 100%;
+    font-size: large;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.nav-divs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-out;
+}
+
+.nav-divs:hover {
+    background-color: #5b585e;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #5b585e;
+}
+
+.nav-btns {
+    display: flex;
+    height: 75px;
+}
+
+.nav-titles {
+    margin-left: 40px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.content-panels {
+    margin-left: 16%;
+    transition: 0.5s;
+    width: 84%;
+}
+
+#home-panel {
+    display: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+#home-panel h2,
+#home-panel p {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#weather-panel,
+#airpollution-panel {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#airpollution-panel {
+    flex-direction: column;
+}
+
+#navigation-panel form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -25px;
+    padding: 0;
+}
+
+#navigation-panel h2,
+#navigation-panel img,
+#navigation-panel div,
+#navigation-panel form {
+    transition: 0.3s;
+}
+
+#weather-container,
+#scale-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #5b585e;
+}
+
+#search-btn {
+    margin-left: 10px;
+    width: 25px;
+    border-radius: 10px;
+}
+
+#zip-code-input {
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+#home-image,
+#weather-image,
+#airpollution-image {
+    padding-left: 10%;
+}
+
+#weather-container-1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weather-condition-icon {
+    width: 500px;
+    height: 500px;
+}
+
+#weather-container-2,
+#weather-container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-container-2 div,
+#weather-container-3 div,
+#scale-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+#air-quality-description {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#air-quality-status {
+    margin: 0;
+    font-size: 200%;
+}
+
+#weather-container-2 h2,
+#weather-container-2 h3,
+#weather-container-3 h2,
+#weather-container-3 h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#weather-zip-code,
+#weather-container-2 h3,
+#weather-container-3 h3 {
+    color: aqua;
+}
+
+#zip-code-indicator {
+    margin-top: 250px;
+}
+
+#close-nav,
+#open-nav {
+    position: absolute;
+    color: white;
+    top: -22.5px;
+    font-size: 30px;
+    margin-left: 50px;
+    transition: 0.5s ease-out;
+}
+
+#close-nav {
+    right: 20px;
+}
+
+#open-nav {
+    right: 98%;
+}
+
+#close-nav:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#open-nav:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+#air-quality-index {
+    font-size: 1500%;
+    margin: 0;
+}
+
+#line-container,
+#quality-label-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#line-container h2 {
+    margin: 0;
+}
+
+#spectrum {
+    margin-left: 100px;
+}
+
+#pointer {
+    font-size: 50px;
+    margin-bottom: -5px;
+    margin-left: 71px;
+    transition: 0.3s;
+}
+
+#line {
+    width: 1000px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 25px;
+    background: linear-gradient(to right, lightgreen, #dec20b, orange, red, purple);
+}
+
+#quality-label-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 85.5px;
+    margin-right: 85.5px;
+}
